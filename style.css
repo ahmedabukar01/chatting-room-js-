@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:500px;
+    margin:auto;
+    padding:10px;
+}
+.choose{
+    text-align:center;
+    margin:3px 0;
+    margin-top:19px;
+}
+h1{
+    text-align:center;
+}
+ul{
+    list-style-type: none;
+}
+.buttons{
+    text-align: center;
+    padding:5px;
+}
+.buttons button{
+    margin:0 10px;
+    border-radius: 4px;
+}
+.btn{
+    padding:7px 10px;
+    border:none;
+    background:#43d9be;
+    color:#fff;
+    box-shadow: none !important;
+    outline:none !important;
+}
+.btn:focus{
+    outline:none !important;
+}
+.input-text{
+    display:inline-block;
+    font-size: 18px;
+    padding:6px 5px;
+    background:rgb(227, 231, 233);
+}
+.input-group{
+    margin:10px 0;
+    border:1px solid lightgray;
+    border-radius: 3px;
+}
+input[type="text"]{
+    padding:5px 0;
+    border:none;
+    width:300px;
+    outline:none;
+}
+input[type="submit"]{
+    margin-left:-4px;
+    border-radius: none;
+    padding:8px 10px;
+}
+input.send{
+    padding-right: 19px;
+    margin-left:1px;
+}
+
+/* classes in js */
+.list-group-item{
+    margin:4px 0;
+}
