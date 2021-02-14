@@ -3,6 +3,7 @@ const chatList = document.querySelector('.chat-list');
 const newChatForm = document.querySelector('.new-chat');
 const newNameForm = document.querySelector('.new-name');
 const feedback = document.querySelector('.feedback');
+const buttons = document.querySelector('.buttons');
 
 newNameForm.addEventListener('submit',e=>{
     e.preventDefault();
@@ -33,3 +34,11 @@ const chatUi = new ChatUi(chatList);
 //get chat and render
 myChatRoom.getChats(data=>{chatUi.render(data)});
 
+// buttons 
+buttons.addEventListener('click',e=>{
+    if(e.target.tagName === 'BUTTON'){
+        chatUi.clear();
+        myChatRoom.updateRoom(e.target.getAttribute('id'));
+        myChatRoom.getChats(chat =>{chatUi.render(chat)});
+    }
+})
