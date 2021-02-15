@@ -5,6 +5,8 @@ const newNameForm = document.querySelector('.new-name');
 const feedback = document.querySelector('.feedback');
 const buttons = document.querySelector('.buttons');
 
+// eventlisteners
+
 newNameForm.addEventListener('submit',e=>{
     e.preventDefault();
     const name = newNameForm.name.value.trim();
